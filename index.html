@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="EXHIBITION '26 at Delhi Public School, Sector 84, Gurugram — a simple guide to the school exhibition. See the floor plan, open an exhibition, and find your way around.">
+  <title>EXHIBITION '26 — Delhi Public School, Sector 84, Gurugram</title>
+  <script>document.documentElement.className = "js";</script>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/map.css">
+  <link rel="stylesheet" href="styles/overlay.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-brand">
+        <span class="lb-line">EXHIBITION</span>
+        <span class="lb-mark">&rsquo;26</span>
+      </div>
+      <p class="loader-school">DELHI PUBLIC SCHOOL · SECTOR 84 · GURUGRAM</p>
+      <div class="loader-bar"><i></i></div>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="#top">
+        <img class="brand-logo" src="assets/logo.png" alt="Delhi Public School, Sector 84, Gurugram" width="31" height="40" onerror="this.style.display='none'">
+        <span class="brand-name">
+          <strong>EXHIBITION <span>&rsquo;26</span></strong>
+          <small>DELHI PUBLIC SCHOOL · SECTOR 84 · GURUGRAM</small>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Main menu">
+        <a class="nav-link" href="#explore">The Map</a>
+        <a class="nav-link" href="#directory">The List</a>
+        <a class="nav-link" href="#help">How To Use</a>
+        <a class="nav-link" href="#visit">When &amp; Where</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true">
+        <svg class="hero-grid" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <pattern id="hg-grid" width="80" height="80" patternUnits="userSpaceOnUse">
+              <path d="M80 0H0V80" fill="none" stroke="#F5F5F5" stroke-opacity="0.05"/>
+            </pattern>
+          </defs>
+          <rect width="1440" height="900" fill="url(#hg-grid)"/>
+        </svg>
+        <div class="hero-chakra">
+          <img src="ashokachakra.png" alt="" width="472" height="472">
+        </div>
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="hero-glow hero-glow-3"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">
+          <span class="heb-school">DELHI PUBLIC SCHOOL · SECTOR 84 · GURUGRAM</span>
+          <br>
+          <span class="heb-date">14 AUGUST 2026 · 9 AM &ndash; 1 PM</span>
+        </p>
+        <h1 class="hero-title">
+          <span class="mask"><span class="mask-in">The school</span></span>
+          <span class="mask"><span class="mask-in">becomes a museum.</span></span>
+        </h1>
+        <p class="hero-sub">Welcome! Students have turned the whole school into one big exhibition. Use this guide to see a map, open any exhibition, and find your way.</p>
+        <div class="hero-cta-row">
+          <button class="btn btn-primary" id="heroCta">
+            <span class="btn-inner">SEE THE FLOOR PLAN</span>
+          </button>
+          <a class="btn btn-ghost" href="#directory">SEE THE LIST</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLOOR PLAN -->
+    <section class="map-section section" id="explore">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">THE FLOOR PLAN</p>
+          <h2 class="sec-title">WHERE<br>EVERYTHING IS</h2>
+          <p class="sec-sub">This is the floor plan of the school. To open an exhibition, tap its name in <a href="#directory" class="sec-link">the list</a> below.</p>
+        </div>
+
+        <div class="map-toolbar reveal">
+          <span class="map-img-tag" id="mapImgTag">TAP TO ZOOM</span>
+        </div>
+
+        <div class="map-shell reveal">
+          <div class="map-img-wrap" id="floorPlanWrap">
+            <img class="map-img" id="floorPlanImg" src="assets/floor-plan.jpg" alt="Floor plan of the school — tap to zoom" width="1077" height="583" decoding="async" fetchpriority="low">
+            <div class="map-zoom" id="mapZoomCtl" hidden>
+              <button class="map-zoom-btn" id="mapZoomIn" aria-label="Zoom in">+</button>
+              <button class="map-zoom-btn" id="mapZoomReset" aria-label="Reset zoom">RESET</button>
+              <button class="map-zoom-btn" id="mapZoomOut" aria-label="Zoom out">&minus;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIRECTORY -->
+    <section class="directory-section section" id="directory">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">ALL TWELVE EXHIBITIONS</p>
+          <h2 class="sec-title">THE LIST</h2>
+          <p class="sec-sub">Tap any name below to open it. You can also open them by tapping the dots on the map.</p>
+        </div>
+        <div class="directory-list" id="directoryList" role="list"></div>
+      </div>
+    </section>
+
+    <!-- HOW TO USE -->
+    <section class="help-section section" id="help">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">NEED A HAND?</p>
+          <h2 class="sec-title">HOW TO USE<br>THIS GUIDE</h2>
+        </div>
+        <div class="help-grid">
+          <div class="help-step reveal">
+            <span class="help-num">1</span>
+            <h3>Look at the floor plan</h3>
+            <p>The floor plan shows the whole school, with the room numbers.</p>
+          </div>
+          <div class="help-step reveal">
+            <span class="help-num">2</span>
+            <h3>Tap a name in the list</h3>
+            <p>A simple page opens with the classroom number.</p>
+          </div>
+          <div class="help-step reveal">
+            <span class="help-num">3</span>
+            <h3>Use the room number</h3>
+            <p>Find that number on the floor plan, and walk there.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="event-section section" id="visit">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">PLAN YOUR VISIT</p>
+          <h2 class="sec-title">WHEN &amp; WHERE</h2>
+        </div>
+        <div class="visit-grid reveal">
+          <div class="visit-card">
+            <span class="visit-label">WHEN</span>
+            <strong>14 August 2026</strong>
+          </div>
+          <div class="visit-card">
+            <span class="visit-label">OPENING HOURS</span>
+            <strong>9:00 AM &ndash; 1:00 PM</strong>
+          </div>
+          <div class="visit-card">
+            <span class="visit-label">WHERE</span>
+            <strong>DPS Sector 84, Gurugram</strong>
+          </div>
+          <div class="visit-card">
+            <span class="visit-label">WHO CAN COME</span>
+            <strong>Everyone is welcome</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section section" id="about">
+      <div class="container">
+        <div class="about-copy reveal">
+          <p class="kicker">ABOUT THE EXHIBITION</p>
+          <h2 class="about-title">Twelve departments.<br>Over forty student projects.</h2>
+          <p>Everything you see here was made by students — from science experiments and robots to paintings and business ideas. Take your time, ask questions, and enjoy.</p>
+        </div>
+        <div class="stats reveal">
+          <div class="stat"><strong>12</strong><span>DEPARTMENTS</span></div>
+          <div class="stat"><strong>40+</strong><span>STUDENT PROJECTS</span></div>
+          <div class="stat"><strong>500+</strong><span>STUDENT CONTRIBUTORS</span></div>
+          <div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <nav class="mobile-nav" aria-label="Main menu">
+    <a class="mn-link" href="#explore">
+      <svg class="mn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      <span>Floor Plan</span>
+    </a>
+    <a class="mn-link mn-list" href="#directory">
+      <svg class="mn-ico" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+        <defs>
+          <linearGradient id="g-list" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#F5F5F5"/>
+            <stop offset="1" stop-color="#4C7BFF"/>
+          </linearGradient>
+        </defs>
+        <path d="M5 6h14M5 12h14M5 18h14" stroke="url(#g-list)"/>
+      </svg>
+      <svg class="mn-label" viewBox="0 0 44 14" width="44" height="14" aria-hidden="true">
+        <defs>
+          <linearGradient id="g-list-t" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="44" y2="0">
+            <stop offset="0" stop-color="#F5F5F5"/>
+            <stop offset="1" stop-color="#4C7BFF"/>
+          </linearGradient>
+        </defs>
+        <text x="22" y="11" text-anchor="middle" fill="url(#g-list-t)">List</text>
+      </svg>
+    </a>
+    <a class="mn-link mn-help" href="#help">
+      <svg class="mn-ico" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+        <defs>
+          <linearGradient id="g-help" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#4C7BFF"/>
+            <stop offset="1" stop-color="#F5F5F5"/>
+          </linearGradient>
+        </defs>
+        <g stroke="url(#g-help)"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.8.3-1.4.9-1.4 1.7v.5"/><path d="M12 17.2h.01"/></g>
+      </svg>
+      <svg class="mn-label" viewBox="0 0 44 14" width="44" height="14" aria-hidden="true">
+        <defs>
+          <linearGradient id="g-help-t" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="44" y2="0">
+            <stop offset="0" stop-color="#4C7BFF"/>
+            <stop offset="1" stop-color="#F5F5F5"/>
+          </linearGradient>
+        </defs>
+        <text x="22" y="11" text-anchor="middle" fill="url(#g-help-t)">Help</text>
+      </svg>
+    </a>
+    <a class="mn-link mn-when" href="#visit">
+      <svg class="mn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <span>When</span>
+    </a>
+  </nav>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-brand">EXHIBITION &rsquo;26</span>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#explore">Floor Plan</a>
+          <a href="#directory">The List</a>
+          <a href="#help">How To Use</a>
+          <a href="#visit">When &amp; Where</a>
+        </nav>
+        <a class="to-top" href="#top">BACK TO TOP &uarr;</a>
+      </div>
+      <div class="footer-note">
+        <span>DELHI PUBLIC SCHOOL · SECTOR 84 · GURUGRAM</span>
+        <span>ANNUAL SCHOOL EXHIBITION · 14 AUG 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- EXHIBITION OVERLAY -->
+  <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="Exhibition details" hidden>
+    <div class="overlay-backdrop" data-close-overlay></div>
+    <div class="overlay-panel" role="document">
+      <header class="overlay-header">
+        <div class="ov-meta">
+          <span class="ov-num" id="ovNumber">01</span>
+        </div>
+        <button class="ov-close" id="ovClose" aria-label="Close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </header>
+
+      <div class="overlay-scroll">
+        <div class="ov-grid">
+          <div class="ov-main">
+            <div class="ov-photo-wrap">
+              <img class="ov-photo" id="ovPhoto" alt="" loading="lazy" decoding="async" onerror="this.style.display='none'">
+            </div>
+            <h2 class="ov-title" id="ovTitle"></h2>
+
+            <div class="ov-room">
+              <span class="ov-room-label">CLASSROOMS</span>
+              <strong class="ov-room-value" id="ovRoom">—</strong>
+            </div>
+          </div>
+
+          <aside class="ov-side">
+            <button class="ov-btn ov-back" id="ovBackBtn" data-ov-back>BACK TO FLOOR PLAN</button>
+          </aside>
+
+          <div class="ov-actions">
+            <button class="ov-btn ov-back" data-ov-back>BACK TO FLOOR PLAN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <noscript>
+    <p style="color:#F5F5F5;padding:2rem;text-align:center;font-family:sans-serif">This guide needs JavaScript enabled. Please turn it on to use the floor plan.</p>
+  </noscript>
+
+  <script src="data/exhibitions.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/overlay.js"></script>
+  <script src="js/directory.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
