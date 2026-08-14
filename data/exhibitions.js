@@ -55,8 +55,8 @@ window.EXHIBITIONS = [
     rooms: ["PHYSICS LAB"],
     image: "assets/exhibits/robotics_collage.jpg",
     tagline: "Machines that learn, move and think.",
-    about: "Meet the machines students have designed, built and taught to think. Autonomous rovers, COMPUTERuter-vision systems and smart-agriculture prototypes in the PHYSICSsics Lab.",
-    projects: ["Autonomous Rover", "COMPUTERuter Vision", "Smart Agriculture"],
+    about: "Meet the machines students have designed, built and taught to think. Autonomous rovers, COMPUTER-vision systems and smart-agriculture prototypes in the PHYSICSsics Lab.",
+    projects: ["Autonomous Rover", "COMPUTER Vision", "Smart Agriculture"],
     color: "#22D3EE"
   },
   {
@@ -67,9 +67,9 @@ window.EXHIBITIONS = [
     area: "2nd & 3rd Floor",
     location: "VI C, VI D, V E, COMPUTER LAB (jr.)",
     rooms: ["VI C", "VI D", "V E", "COMPUTER LAB (jr.)"],
-    image: "assets/exhibits/COMPUTERuter-science.jpg",
+    image: "assets/exhibits/COMPUTER-science.jpg",
     tagline: "Where logic becomes language.",
-    about: "From first lines of code to polished software — explore student-built games, websites and tools across the COMPUTERuter Science labs and coding classrooms.",
+    about: "From first lines of code to polished software — explore student-built games, websites and tools across the COMPUTER Science labs and coding classrooms.",
     projects: ["Student-Coded Games", "Web Projects", "Smart Assistants"],
     color: "#A78BFA"
   },
