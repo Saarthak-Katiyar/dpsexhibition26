@@ -60,9 +60,9 @@ window.EXHIBITIONS = [
     color: "#22D3EE"
   },
   {
-    id: "COMPUTERuter-science",
+    id: "COMPUTER-science",
     number: "04",
-    name: "COMPUTERuter Science",
+    name: "COMPUTER Science",
     category: "TECHNOLOGY",
     area: "2nd & 3rd Floor",
     location: "VI C, VI D, V E, COMPUTER LAB (jr.)",
